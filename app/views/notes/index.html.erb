@@ -1,8 +1,14 @@
   <div class="row">
     <div class="col-8">
-    
-    <%= render "notes/manual/wednesday" %>
-     <%= render "notes/manual/tuesday" %>
+
+      <% @notes.each do |note| %>
+
+      
+        <p class="display-4"><%= note.title %></p>
+        <p><%= simple_format(note.notes) %></p>
+      
+
+      <% end %>
     
     </div>
     <div class="col-4"><%= image_tag("profile.png")
