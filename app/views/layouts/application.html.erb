@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Notesapp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -15,5 +15,6 @@
     <div class="container">
       <%= yield %>
     </div>
+  <%= render "layouts/footer"%>
   </body>
 </html>
